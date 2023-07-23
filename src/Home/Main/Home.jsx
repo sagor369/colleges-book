@@ -1,8 +1,8 @@
-
+import Header from "./Header/Header";
 const Home = () => {
     return (
-        <div>
-            home incomming
+        <div className="mt-20">
+            <Header></Header>
         </div>
     );
 };

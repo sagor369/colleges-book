@@ -6,9 +6,9 @@ const Footer = () => {
       <img className="h-20 w-20 rounded-full" src="logo.jpg" alt="" />
 
         <p>
-          ACME Industries Ltd.
+        National college
           <br />
-          Providing reliable tech since 1992
+          Providing reliable tech since 2023
         </p>
       </div>
       <div>
