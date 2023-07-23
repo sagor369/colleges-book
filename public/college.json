@@ -1,0 +1,73 @@
+[
+    {
+      "name": "University of ABC",
+      "location": "City XYZ",
+      "established": "1985",
+      "rating": "5.0",
+      "rating_pepole": "18",
+      "courses": ["Computer Science", "Business Administration", "Electrical Engineering"],
+      "website": "https://www.universityofabc.edu",
+      "image": "https://cdn.pixabay.com/photo/2020/01/09/03/43/mansion-4751778_640.jpg",
+      "admission_dates": "September 1 - December 15",
+      "events": ["Orientation Day", "Career Fair", "Annual Fest"],
+      "research_history": "Founded the Institute for Advanced Studies in 1992",
+      "sports": ["Soccer", "Basketball", "Swimming"]
+    },
+    {
+      "name": "XYZ State College",
+      "location": "Town ABC",
+      "established": "1972",
+      "rating": "4.9",
+      "rating_pepole": "15",
+      "courses": ["Biology", "Chemistry", "Mathematics", "Psychology"],
+      "website": "https://www.xyzstatecollege.edu",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEqlmVFJweZ5FMzz4AvyLOdnjkPK-MdttlIQ&usqp=CAU",
+      "admission_dates": "October 1 - January 31",
+      "events": ["Welcome Week", "Research Symposium", "Spring Fling"],
+      "research_history": "Prominent research in environmental studies",
+      "sports": ["Football", "Volleyball", "Tennis"]
+    },
+    {
+      "name": "ABC Technical Institute",
+      "location": "City PQR",
+      "established": "2001",
+      "rating": "4.9",
+      "rating_pepole": "10",
+      "courses": ["Information Technology", "Web Development", "Network Engineering"],
+      "website": "https://www.abctechnicalinstitute.edu",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9jjL9I9QmV-yGIXk8s2k7RPkRHAi5r0oaA&usqp=CAU",
+      "admission_dates": "April 1 - July 31",
+      "events": ["Tech Expo", "Hackathon", "Graduation Day"],
+      "research_history": "Cutting-edge research in cybersecurity",
+      "sports": ["Cricket", "Badminton", "Table Tennis"]
+    },
+    {
+      "name": "PQR Community College",
+      "location": "Town XYZ",
+      "established": "1990",
+      "rating": "4.8",
+      "rating_pepole": "12",
+      "courses": ["Business Management", "Nursing", "Graphic Design", "Culinary Arts"],
+      "website": "https://www.pqrcommunitycollege.edu",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAn2wSiFs6FHL2tKrYfvBsM0x3WmuCuo1OCg&usqp=CAU",
+      "admission_dates": "March 15 - July 31",
+      "events": ["Open House", "Art Exhibition", "Culinary Competition"],
+      "research_history": "Focus on community development projects",
+      "sports": ["Baseball", "Softball", "Golf"]
+    },
+    {
+      "name": "DEF Arts Academy",
+      "location": "City MNO",
+      "established": "1988",
+      "rating": "4.7",
+      "rating_pepole": "9",
+      "courses": ["Fine Arts", "Film and Media", "Performing Arts"],
+      "website": "https://www.defartsacademy.edu",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5HC9NgCAA3v6XTEdwFOsQa5ZdUfCviC1-g&usqp=CAU",
+      "admission_dates": "January 15 - May 31",
+      "events": ["Art Festival", "Film Showcase", "Theater Production"],
+      "research_history": "Notable contributions to visual arts",
+      "sports": ["Dance", "Martial Arts", "Yoga"]
+    }
+  ]
+  

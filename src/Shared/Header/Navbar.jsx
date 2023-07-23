@@ -23,7 +23,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-300 py-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ const Navbar = () => {
           </ul>
         </div>
         <btn className="btn btn-ghost normal-case text-xl flex gap-4">
-          <img className="h-16 w-16" src="logo.jpg" alt="" />
+          <img className="h-16 w-16 rounded-full" src="logo.jpg" alt="" />
           <span className="font-extrabold">National college</span>
         </btn>
       </div>
