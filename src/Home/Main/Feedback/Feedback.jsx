@@ -8,8 +8,8 @@ const Feedback = () => {
     <div>
       <Title title={"Feedback section"}></Title>
       <div className="hero ">
-        <div className="hero-content  ">
-          <form className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
+        <form className="hero-content  ">
+          <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -55,7 +55,8 @@ const Feedback = () => {
                 <button className="btn btn-primary">Send</button>
               </div>
             </div>
-          </form>
+            
+          </div>
           <div className="text-center lg:text-left">
             <div className="form-control">
               <label className="label">
@@ -69,7 +70,7 @@ const Feedback = () => {
               ></textarea>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

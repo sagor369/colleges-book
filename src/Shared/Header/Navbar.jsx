@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {FaSearch} from "react-icons/fa"
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-300 py-4">
+    <div className="navbar bg-base-300 py-4 rounded-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,21 +54,32 @@ const Navbar = () => {
                   placeholder="college name"
                   className="border md:px-4 py-2 "
                 />
-                <FaSearch className="bg-slate-300 w-6 h-6"/>
+                <FaSearch className=" w-6 h-6"/>
               </label>
             </li>
           </ul>
         </div>
-        <btn className="btn btn-ghost normal-case text-xl flex gap-4">
-          <img className="h-16 w-16 rounded-full" src="logo.jpg" alt="" />
+        <btn className="btn btn-ghost normal-case text-xl flex justify-center items-center gap-4">
+          <img className="h-12 w-12 rounded-full" src="logo.jpg" alt="" />
           <span className="font-extrabold">National college</span>
         </btn>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{items}</ul>
+        <ul className="menu menu-horizontal px-1">{items}
+        <li className="p-0">
+        <label className="flex border p-0 border-black">
+                <input
+                  type="text"
+                  placeholder="college name"
+                  className="border rounded-l-xl md:px-4 py-3  "
+                />
+                <FaSearch className=" w-6 h-6"/>
+              </label>
+        </li>
+        </ul>
       </div>
       <div className="navbar-end ">
-        <a className="hidden md:btn">
+        {/* <a className="hidden md:btn">
           <label className="input-group">
             <input
               type="text"
@@ -77,7 +88,9 @@ const Navbar = () => {
             />
             <span><FaSearch className=" cursor-pointer"/></span>
           </label>
-        </a>
+        </a> */}
+        <Link className="btn btn-primary mr-4" to={'/login'}> Login</Link>
+        <Link className="btn btn-accent mr-4" to={'/register'}> Register</Link>
       </div>
     </div>
   );
