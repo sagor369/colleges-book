@@ -1,8 +1,38 @@
+import { useContext } from "react";
 import Navbar from "../Shared/Header/Navbar";
 import{FaGoogle} from "react-icons/fa"
 import {Link} from "react-router-dom"
+import { AuthContext } from "../Provaider/AuthProvaider";
 
 const Login = () => {
+  const {signIn, googleuser}= useContext(AuthContext)
+
+  const loginUser = (event) =>{
+    event.preventDefault();
+    const from = event.target
+    const email = from.email.value 
+    const password = from.password.value 
+
+    signIn(email, password)
+    .then(result =>{
+      console.log(result)
+    })
+    .catch(error => {
+      console.log(error.message)
+    })
+  }
+
+  const googleSign = () =>{
+    googleuser()
+  .then(result =>{
+    console.log(result)
+  })
+  .catch(error => {
+    console.log(error.message)
+  })
+  }
+  
+
   return (
     <div>
         <Navbar></Navbar>
@@ -17,7 +47,7 @@ const Login = () => {
             </p>
           </div>
           <div className="card flex-shrink-0 md:w-1/2 w-full shadow-2xl bg-base-100">
-            <div className="card-body">
+            <form onSubmit={loginUser} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -25,6 +55,7 @@ const Login = () => {
                 <input
                   type="text"
                   placeholder="email"
+                  name="email"
                   className="input input-bordered"
                 />
               </div>
@@ -35,20 +66,22 @@ const Login = () => {
                 <input
                   type="password"
                   placeholder="password"
+                  name="password"
                   className="input input-bordered"
                 />
                 
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <input  type="submit" value={'Login'} className="btn btn-primary"/>
                 <p><small>Create an new account <Link className="text-blue-500" to={'/register'}>Register</Link></small> </p>
               </div>
-            </div>
+            </form>
             <div className="divider">OR</div>
             <div className="bg-slate-400 py-4 flex justify-center items-center rounded-b-xl">
-                <button><FaGoogle className="w-8 h-8  text-orange-300"/></button>
+                <button onClick={googleSign}><FaGoogle className="w-8 h-8  text-orange-300"/></button>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
