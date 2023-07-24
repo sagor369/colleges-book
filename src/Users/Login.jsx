@@ -1,11 +1,16 @@
 import { useContext } from "react";
 import Navbar from "../Shared/Header/Navbar";
 import{FaGoogle} from "react-icons/fa"
-import {Link} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 import { AuthContext } from "../Provaider/AuthProvaider";
 
 const Login = () => {
   const {signIn, googleuser}= useContext(AuthContext)
+  const location = useLocation()
+  const navigate = useNavigate()
+  const from = location.state?.from?.pathname || '/'
+  console.log(from)
+
 
   const loginUser = (event) =>{
     event.preventDefault();
@@ -15,6 +20,7 @@ const Login = () => {
 
     signIn(email, password)
     .then(result =>{
+      navigate(from, { replace: true })
       console.log(result)
     })
     .catch(error => {
@@ -25,6 +31,7 @@ const Login = () => {
   const googleSign = () =>{
     googleuser()
   .then(result =>{
+    navigate(from, { replace: true })
     console.log(result)
   })
   .catch(error => {
